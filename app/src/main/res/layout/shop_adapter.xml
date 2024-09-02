@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/border_primary">
+
+        <TextView
+            android:id="@+id/shopName"
+            style="@style/adapter_title_primary_light_18sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/shopDes"
+            style="@style/adapter_description_black_light_15sp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:id="@+id/phoneContainer"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/contact_us_icon"
+                app:tint="@color/primary" />
+
+            <TextView
+                android:id="@+id/contactNumber"
+                style="@style/text_black_italic_14sp"
+                android:text="Phone"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emailContainer"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/email_icon"
+                app:tint="@color/primary" />
+
+            <TextView
+                android:id="@+id/contactEmail"
+                style="@style/text_black_italic_14sp"
+                android:text="Email"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/locationContainer"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="wrap_content"
+                style="@style/adapter_description_black_light_15sp"
+                android:text="@string/shop_location" />
+
+            <TextView
+                android:id="@+id/purok"
+                android:layout_width="wrap_content"
+                style="@style/adapter_description_black_light_15sp"
+                android:text="Purok"
+                android:layout_toEndOf="@+id/locationText"
+                android:layout_marginStart="5dp" />
+
+            <TextView
+                android:id="@+id/mapView"
+                style="@style/adapter_date_black_italic_13sp"
+                android:text="View tagged location"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/primary"
+                android:background="@drawable/text_underline"
+                android:backgroundTint="@color/primary" />
+
+            <TextView
+                android:id="@+id/shopLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_light"
+                android:layout_below="@id/locationText"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/Edit"
+                android:visibility="gone"
+                style="@style/adapter_edit_primary_italic_14sp" />
+
+            <TextView
+                android:id="@+id/Delete"
+                android:visibility="gone"
+                style="@style/adapter_delete_reject_italic_14sp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/Edit" />
+
+            <TextView
+                android:id="@+id/Show"
+                style="@style/adapter_edit_primary_italic_14sp"
+                android:drawablePadding="5dp"
+                android:text="Show more"
+                android:layout_alignParentEnd="true"
+                app:drawableTint="@color/primary"
+                app:drawableEndCompat="@drawable/arrow_drop_down_icon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

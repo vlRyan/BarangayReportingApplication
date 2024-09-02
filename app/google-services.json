@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "___________________FIREBASE-CONFIGURATION_____________________",
+    "firebase_url": "_________________________",
+    "project_id": "_________________________",
+    "storage_bucket": "______________________"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "__________________________",
+        "android_client_info": {
+          "package_name": "_________________________"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "______________________________"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "_________________________________",
+        "android_client_info": {
+          "package_name": "________________________________"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "__________________________"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

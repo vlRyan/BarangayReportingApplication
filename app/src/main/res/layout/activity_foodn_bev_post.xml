@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LocalShops.FoodnBevPost">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_primary_regular_18sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Restaurants"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_primary"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:text="Shop Name" />
+
+                <EditText
+                    android:id="@+id/shopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:padding="10dp"
+                    android:maxLines="2"
+                    android:hint="Input text..."
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_primary"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:text="Shop Description" />
+
+                <EditText
+                    android:id="@+id/shopDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|start"
+                    android:hint="Input text..."
+                    android:maxLines="5"
+                    android:padding="10dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_primary"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:text="Contact Number"/>
+
+                <EditText
+                    android:id="@+id/shopContactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|start"
+                    android:padding="10dp"
+                    android:maxLines="2"
+                    android:hint="Input text..."
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_primary"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:text="Contact Email"/>
+
+                <EditText
+                    android:id="@+id/shopContactEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|start"
+                    android:padding="10dp"
+                    android:hint="Input text..."
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_primary"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:text="Location" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline">
+
+                    <Spinner
+                        android:id="@+id/type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"/>
+
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/shopLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:padding="10dp"
+                    android:maxLines="5"
+                    android:layout_marginTop="10dp"
+                    android:hint="Input text..."
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pinLocationText"
+                        style="@style/text_primary_italic_16sp"
+                        android:text="Pin Location"
+                        android:background="@drawable/text_underline"
+                        android:onClick="openMapActivity"/>
+
+                    <ImageView
+                        android:id="@+id/locationSaved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/check_box_icon"
+                        android:visibility="gone"
+                        app:tint="@color/primary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/post"
+                style="@style/primary_button"
+                android:layout_marginBottom="20dp"
+                android:text="Post" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

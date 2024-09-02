@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashboard.BarangayOfficials"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:background="@android:color/transparent"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/previous_arrow_icon"
+            app:tint="@color/primary" />
+
+        <TextView
+            style="@style/text_primary_medium_24sp"
+            android:text="Barangay Officials"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border_primary"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/punong_barangay_profile"
+                        style="@style/official_profile"
+                        android:layout_marginEnd="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/upload_punong_barangay_prof"
+                        style="@style/official_upload_button"
+                        android:layout_alignEnd="@id/punong_barangay_profile"
+                        android:layout_alignBottom="@id/punong_barangay_profile" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_primary_regular_18sp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Punong Barangay" />
+
+                    <EditText
+                        android:id="@+id/punong_barangay_name"
+                        style="@style/text_black_italic_16sp"
+                        android:text="Captain"
+                        android:inputType="textMultiLine" />
+
+                    <TextView
+                        android:id="@+id/edit_punong_barangay"
+                        style="@style/adapter_edit_primary_italic_14sp"
+                        android:layout_gravity="end|bottom"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/text_primary_regular_18sp"
+                    android:text="Sangguniang Barangay Members"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/member_profile_1"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_member_prof_1"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/member_profile_1"
+                                android:layout_alignBottom="@id/member_profile_1"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/barangay_member_name_1"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Member"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_barangay_member_1"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/member_profile_2"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_member_prof_2"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/member_profile_2"
+                                android:layout_alignBottom="@id/member_profile_2"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/barangay_member_name_2"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Member"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_barangay_member_2"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/member_profile_3"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_member_prof_3"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/member_profile_3"
+                                android:layout_alignBottom="@id/member_profile_3"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/barangay_member_name_3"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Member"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_barangay_member_3"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/member_profile_4"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp" />
+
+                            <ImageButton
+                                android:id="@+id/upload_member_prof_4"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/member_profile_4"
+                                android:layout_alignBottom="@id/member_profile_4"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/barangay_member_name_4"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Member"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_barangay_member_4"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/member_profile_5"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_member_prof_5"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/member_profile_5"
+                                android:layout_alignBottom="@id/member_profile_5"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/barangay_member_name_5"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Member"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:id="@+id/edit_barangay_member_5"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/member_profile_6"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_member_prof_6"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/member_profile_6"
+                                android:layout_alignBottom="@id/member_profile_6"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/barangay_member_name_6"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Member"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_barangay_member_6"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/member_profile_7"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_member_prof_7"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/member_profile_7"
+                                android:layout_alignBottom="@id/member_profile_7"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/barangay_member_name_7"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Member"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_barangay_member_7"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_primary"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/sk_chair_profile"
+                        style="@style/official_profile"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/profile_icon" />
+
+                    <ImageButton
+                        android:id="@+id/upload_sk_chair_prof"
+                        style="@style/official_upload_button"
+                        android:layout_alignEnd="@id/sk_chair_profile"
+                        android:layout_alignBottom="@id/sk_chair_profile" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_primary_regular_18sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="SK Chairperson" />
+
+                    <EditText
+                        android:id="@+id/sk_chair_name"
+                        style="@style/text_black_italic_16sp"
+                        android:text="Chairperson"
+                        android:inputType="textMultiLine" />
+
+                    <TextView
+                        android:id="@+id/edit_sk_chair"
+                        style="@style/adapter_edit_primary_italic_14sp"
+                        android:layout_gravity="end|bottom"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_primary_regular_18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="SK Kagawad"
+                    android:paddingTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/sk_member_profile_1"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_sk_member_profile_1"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/sk_member_profile_1"
+                                android:layout_alignBottom="@id/sk_member_profile_1"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/sk_kagawad_name_1"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Kagawad"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_sk_kagawad_1"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/sk_member_profile_2"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_sk_member_profile_2"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/sk_member_profile_2"
+                                android:layout_alignBottom="@id/sk_member_profile_2"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/sk_kagawad_name_2"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Kagawad"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:id="@+id/edit_sk_kagawad_2"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/sk_member_profile_3"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_sk_member_profile_3"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/sk_member_profile_3"
+                                android:layout_alignBottom="@id/sk_member_profile_3"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/sk_kagawad_name_3"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Kagawad"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_sk_kagawad_3"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/sk_member_profile_4"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_sk_member_profile_4"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/sk_member_profile_4"
+                                android:layout_alignBottom="@id/sk_member_profile_4"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/sk_kagawad_name_4"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Kagawad"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:id="@+id/edit_sk_kagawad_4"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/sk_member_profile_5"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_sk_member_profile_5"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/sk_member_profile_5"
+                                android:layout_alignBottom="@id/sk_member_profile_5"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/sk_kagawad_name_5"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Kagawad"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_sk_kagawad_5"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/sk_member_profile_6"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_sk_member_profile_6"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/sk_member_profile_6"
+                                android:layout_alignBottom="@id/sk_member_profile_6"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/sk_kagawad_name_6"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Kagawad"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_sk_kagawad_6"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/border_primary">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/sk_member_profile_7"
+                                style="@style/official_profile"
+                                android:layout_marginEnd="10dp"/>
+
+                            <ImageButton
+                                android:id="@+id/upload_sk_member_profile_7"
+                                style="@style/official_upload_button"
+                                android:layout_alignEnd="@id/sk_member_profile_7"
+                                android:layout_alignBottom="@id/sk_member_profile_7"/>
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/sk_kagawad_name_7"
+                            style="@style/text_black_italic_16sp"
+                            android:text="Kagawad"
+                            android:inputType="textMultiLine"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/edit_sk_kagawad_7"
+                            style="@style/adapter_edit_primary_italic_14sp"
+                            android:layout_gravity="end|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

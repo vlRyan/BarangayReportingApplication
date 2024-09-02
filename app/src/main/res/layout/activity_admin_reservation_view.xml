@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Reservation.adminReservationView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/dateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background_grey"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/previousBtn"
+            android:background="@drawable/previous_arrow_icon"
+            android:contentDescription="Previous Date"
+            style="@style/admin_reservation_date_arrow"/>
+
+        <TextView
+            android:id="@+id/dateDisplay"
+            android:text="Month Day, Year"
+            style="@style/text_primary_medium_20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:id="@+id/nextBtn"
+            android:background="@drawable/next_arrow_icon"
+            android:contentDescription="Next Date"
+            style="@style/admin_reservation_date_arrow"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_black_light_18sp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Morning Schedule"/>
+
+    <LinearLayout
+        style="@style/admin_reservation_box_container">
+
+        <RelativeLayout
+            android:id="@+id/timeDisplay1"
+            style="@style/admin_reservation_box"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/time1"
+                android:text="@string/_9_00_am"
+                style="@style/admin_reservation_time"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/limit1"
+                    android:text="@string/_0_20"
+                    style="@style/text_primary_regular_20sp"
+                    android:layout_marginEnd="3dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_marginTop="-5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_icon"
+                    android:visibility="visible"
+                    app:tint="@color/primary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timeDisplay2"
+            style="@style/admin_reservation_box">
+
+            <TextView
+                android:id="@+id/time2"
+                android:text="@string/_10_00_am"
+                style="@style/admin_reservation_time"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/limit2"
+                    android:text="@string/_0_20"
+                    style="@style/text_primary_regular_20sp"
+                    android:layout_marginEnd="3dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_icon"
+                    android:visibility="visible"
+                    app:tint="@color/primary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/admin_reservation_box_container">
+
+        <RelativeLayout
+            android:id="@+id/timeDisplay3"
+            style="@style/admin_reservation_box">
+
+            <TextView
+                android:id="@+id/time3"
+                android:text="@string/_11_00_am"
+                style="@style/admin_reservation_time"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/limit3"
+                    android:text="@string/_0_20"
+                    style="@style/text_primary_regular_20sp"
+                    android:layout_marginEnd="3dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_icon"
+                    android:visibility="visible"
+                    android:layout_marginTop="-5dp"
+                    app:tint="@color/primary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_black_light_18sp"
+        android:text="Afternoon Schedule"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        style="@style/admin_reservation_box_container">
+
+        <RelativeLayout
+            android:id="@+id/timeDisplay4"
+            style="@style/admin_reservation_box"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/time4"
+                android:text="@string/_1_00_pm"
+                style="@style/admin_reservation_time"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/limit4"
+                    android:text="@string/_0_20"
+                    style="@style/text_primary_regular_20sp"
+                    android:layout_marginEnd="3dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_icon"
+                    android:visibility="visible"
+                    android:layout_marginTop="-5dp"
+                    app:tint="@color/primary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timeDisplay5"
+            style="@style/admin_reservation_box">
+
+            <TextView
+                android:id="@+id/time5"
+                android:text="@string/_2_00_pm"
+                style="@style/admin_reservation_time"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/limit5"
+                    android:text="@string/_0_20"
+                    style="@style/text_primary_regular_20sp"
+                    android:layout_marginEnd="3dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_icon"
+                    android:visibility="visible"
+                    android:layout_marginTop="-5dp"
+                    app:tint="@color/primary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/admin_reservation_box_container">
+
+        <RelativeLayout
+            android:id="@+id/timeDisplay6"
+            style="@style/admin_reservation_box"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/time6"
+                android:text="@string/_3_00_pm"
+                style="@style/admin_reservation_time"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/limit6"
+                    android:text="@string/_0_20"
+                    style="@style/text_primary_regular_20sp"
+                    android:layout_marginEnd="3dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_icon"
+                    android:layout_marginTop="-5dp"
+                    app:tint="@color/primary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timeDisplay7"
+            style="@style/admin_reservation_box">
+
+            <TextView
+                android:id="@+id/time7"
+                android:text="@string/_4_00_pm"
+                style="@style/admin_reservation_time"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/limit7"
+                    android:text="@string/_0_20"
+                    style="@style/text_primary_regular_20sp"
+                    android:layout_marginEnd="3dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_icon"
+                    android:layout_marginTop="-5dp"
+                    app:tint="@color/primary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

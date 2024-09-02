@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpPage"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="Create your Account"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/firstName"
+            style="@style/text_input_box"
+            android:hint="First Name"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/lastName"
+            style="@style/text_input_box"
+            android:hint="Last Name"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/text_input_box"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/cellnum"
+            style="@style/text_input_box"
+            android:hint="@string/phone_number"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/text_input_box"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/confirm_pass"
+            style="@style/text_input_box"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/primary_button"
+            android:text="Sign Up"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

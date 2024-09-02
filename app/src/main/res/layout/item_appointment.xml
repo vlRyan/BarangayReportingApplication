@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/text_primary_italic_16sp"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/text_primary_italic_16sp"
+                android:layout_alignParentEnd="true"
+                android:text="Time" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/text_primary_regular_18sp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_black_light_16sp"
+                android:layout_marginEnd="5dp"
+                android:text="Purpose:" />
+
+            <TextView
+                android:id="@+id/purpose"
+                style="@style/text_black_light_16sp"
+                android:text="@string/purpose" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_black_light_16sp"
+                android:layout_marginEnd="5dp"
+                android:text="Purok:" />
+
+            <TextView
+                android:id="@+id/purok"
+                style="@style/text_black_light_16sp"
+                android:text="Purok" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+<!--            <TextView-->
+<!--                android:id="@+id/checkUpload"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="Check Uploaded Endorsment"-->
+<!--                android:textSize="16sp"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                android:textStyle="bold"-->
+<!--                android:visibility="visible"/>-->
+
+            <ImageView
+                android:id="@+id/proof"
+                android:layout_height="250dp"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            style="@style/text_black_italic_16sp"
+            android:layout_gravity="center"
+            android:text="Check Status" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/successButton"
+                style="@style/adapter_edit_primary_italic_14sp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/success_icon"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/primary"
+                android:text="Success"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/unsuccessButton"
+                style="@style/adapter_delete_reject_italic_14sp"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/fail_icon"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/reject"
+                android:text="Failed"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

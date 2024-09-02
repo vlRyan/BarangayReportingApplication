@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:text="Date"
+            android:layout_alignParentEnd="true"
+            style="@style/text_black_italic_14sp" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_below="@+id/dateTextView"
+            style="@style/text_primary_regular_18sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="Title"
+            />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            style="@style/text_black_light_16sp"
+            android:layout_below="@+id/titleTextView"
+            android:text="Description"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            style="@style/adapter_delete_reject_italic_14sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/descriptionTextView"
+            android:text="Review"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

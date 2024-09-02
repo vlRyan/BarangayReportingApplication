@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/admincalendarview"
+    android:orientation="vertical"
+    tools:context=".AdminCalendarView">
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_marginTop="-15dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        style="@style/floating_button_primary_add"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcomingEvents"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/calendarView2"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

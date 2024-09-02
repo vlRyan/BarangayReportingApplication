@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/calendar_icon"
+        android:title="Events"/>
+
+    <item
+        android:id="@+id/upload"
+        android:icon="@drawable/read_report_icon"
+        android:title="Reports"/>
+
+    <item
+        android:id="@+id/userappointments"
+        android:icon="@drawable/reservation_icon"
+        android:title="Appointment"/>
+
+    <item
+        android:id="@+id/usermessage"
+        android:icon="@drawable/chat_icon"
+        android:title="Inquiries"/>
+</menu>

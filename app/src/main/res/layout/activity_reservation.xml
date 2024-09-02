@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".bottomMenu.Reservation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_primary">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:text="@string/first_name" />
+
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="top|start"
+                    android:hint="Input text..."
+                    android:inputType="text"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_primary">
+
+            <TextView
+                style="@style/text_primary_regular_16sp"
+                android:text="@string/last_name" />
+
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="top|start"
+                android:hint="Input text..."
+                android:inputType="text"
+                android:padding="10dp"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_primary"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:text="@string/purok_number" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_underline">
+
+                    <Spinner
+                        android:id="@+id/purok_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_primary"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:text="@string/appointment_purpose" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/text_underline">
+
+                    <Spinner
+                        android:id="@+id/purpose_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/addlayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:id="@+id/add"
+                        android:text="requirements"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+<!--                    <ImageView-->
+<!--                        android:id="@+id/uploadMediaImage"-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/image_icon"-->
+<!--                        app:tint="@color/primary"-->
+<!--                        />-->
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/otherPurpose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="top|start"
+                        android:hint="@string/other_purpose"
+                        android:padding="10dp"
+                        android:maxLines="5"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_primary"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preferred_date"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/pickDate"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:background="@drawable/button_primary">
+
+                        <TextView
+                            android:id="@+id/picked"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Pick Date"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/timeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/preffered_time"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <RelativeLayout
+                                android:id="@+id/pickTime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/border_primary"
+                                android:padding="4dp"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:id="@+id/timeDisplay1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="10dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/time1"
+                                        style="@style/text_black_italic_16sp"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/_9_00_am" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/limit1"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/_0_20" />
+
+                                        <TextView
+                                            android:id="@+id/limitTv1"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="1dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="/10" />
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/pickTime2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:padding="4dp"
+                                android:background="@drawable/border_primary"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:id="@+id/timeDisplay2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="10dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/time2"
+                                        style="@style/text_black_italic_16sp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/_10_00_am" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/limit2"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:text="@string/_0_20" />
+
+                                        <TextView
+                                            android:id="@+id/limitTv2"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="1dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="/10" />
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/pickTime3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:padding="4dp"
+                                android:background="@drawable/border_primary"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:id="@+id/timeDisplay3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="10dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/time3"
+                                        style="@style/text_black_italic_16sp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/_11_00_am" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/limit3"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/_0_20"/>
+
+                                        <TextView
+                                            android:id="@+id/limitTv3"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="1dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="/10" />
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/pickTime4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:padding="4dp"
+                                android:background="@drawable/border_primary"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:id="@+id/timeDisplay4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="10dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/time4"
+                                        style="@style/text_black_italic_16sp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/_1_00_pm" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/limit4"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/_0_20" />
+
+                                        <TextView
+                                            android:id="@+id/limitTv4"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="1dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="/10"/>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/pickTime5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:padding="4dp"
+                                android:background="@drawable/border_primary"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:id="@+id/timeDisplay5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="10dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/time5"
+                                        style="@style/text_black_italic_16sp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/_2_00_pm" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/limit5"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/_0_20" />
+
+                                        <TextView
+                                            android:id="@+id/limitTv5"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="1dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="/10"/>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/pickTime6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:padding="4dp"
+                                android:background="@drawable/border_primary"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:id="@+id/timeDisplay6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="10dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/time6"
+                                        style="@style/text_black_italic_16sp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/_3_00_pm" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/limit6"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/_0_20" />
+
+                                        <TextView
+                                            android:id="@+id/limitTv6"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="1dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="/10" />
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/pickTime7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:padding="4dp"
+                                android:background="@drawable/border_primary"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:id="@+id/timeDisplay7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="10dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/time7"
+                                        style="@style/text_black_italic_16sp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:text="@string/_4_00_pm" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/limit7"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/_0_20" />
+
+                                        <TextView
+                                            android:id="@+id/limitTv7"
+                                            style="@style/text_primary_regular_18sp"
+                                            android:layout_marginStart="1dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:gravity="center_vertical"
+                                            android:text="/10" />
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/primary_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

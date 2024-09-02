@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.dashboardEvents"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/whenday"
+                    style="@style/adapter_date_black_italic_13sp" />
+
+                <TextView
+                    android:id="@+id/whentime"
+                    style="@style/adapter_date_black_italic_13sp"
+                    android:text="Time"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/text_primary_regular_18sp"
+                android:text="Title" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/text_black_light_16sp"
+                android:text="Description" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_light_16sp"
+                    android:text="Location"/>
+
+                <TextView
+                    android:id="@+id/location"
+                    style="@style/text_black_light_16sp"
+                    android:text="Location"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Edit"
+                    android:fontFamily="@font/poppins_italic"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/primary"/>
+
+                <TextView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Delete"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/poppins_italic"
+                    android:textColor="@color/reject"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

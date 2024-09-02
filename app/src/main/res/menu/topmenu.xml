@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile"/>
+
+    <item android:title="Barangay Information">
+
+        <menu>
+
+            <item
+                android:id="@+id/officials"
+                android:icon="@drawable/officials_icon"
+                android:title="Officials"/>
+
+            <item
+                android:id="@+id/contacts"
+                android:icon="@drawable/contact_us_icon"
+                android:title="Contacts"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Account">
+
+        <menu>
+
+            <item
+                android:id="@+id/switchAccount"
+                android:icon="@drawable/switch_account_icon"
+                android:title="Switch Account"/>
+
+            <item
+                android:id="@+id/signout"
+                android:icon="@drawable/logout_icon"
+                android:title="Sign Out"/>
+
+        </menu>
+
+    </item>
+
+</menu>

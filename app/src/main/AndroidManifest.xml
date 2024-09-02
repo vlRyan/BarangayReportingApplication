@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Capstone"
+        tools:targetApi="31">
+        <activity
+            android:name=".Statistics"
+            android:exported="false" />
+        <activity
+            android:name=".TermsAndCondition"
+            android:exported="false" />
+        <activity
+            android:name=".LocalShops.LocalShopEdit"
+            android:exported="false" />
+        <activity
+            android:name=".Reservation.UserEditReservation"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivityViewLocation"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Message_.AdminMessage"
+            android:exported="false" />
+        <activity
+            android:name=".Message_.UserSendMessage"
+            android:exported="false" />
+        <activity
+            android:name=".LocalShops.ServicePost"
+            android:exported="false" />
+        <activity
+            android:name=".LocalShops.MarketPost"
+            android:exported="false" />
+        <activity
+            android:name=".LocalShops.FoodnBevPost"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.dashboardEvents"
+            android:exported="false" />
+        <activity
+            android:name=".Reservation.AdminReservationViewItems"
+            android:exported="false" />
+        <activity
+            android:name=".LocalShops.Market"
+            android:exported="false" />
+        <activity
+            android:name=".LocalShops.Services"
+            android:exported="false" />
+        <activity
+            android:name=".LocalShops.FoodnBev"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.BarangayOfficials"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.EmergencyContacts"
+            android:exported="false" />
+        <activity
+            android:name=".NotYetAvailable.ReportInformation"
+            android:exported="false" />
+        <activity
+            android:name=".adminResponse"
+            android:exported="false" />
+        <activity
+            android:name=".Reservation.adminReservationView"
+            android:exported="false" />
+        <activity
+            android:name=".bottomMenu.ReservationList"
+            android:exported="false" />
+        <activity
+            android:name=".bottomMenu.Reservation"
+            android:exported="false" />
+        <activity
+            android:name=".calendarEdit"
+            android:exported="false" />
+        <activity
+            android:name=".calendarAdd"
+            android:exported="false" />
+        <activity
+            android:name=".Adapters.ReportAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ReportDetails"
+            android:exported="false" />
+        <activity
+            android:name=".UserReport"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".navigation"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Capstone.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+    </application>
+
+</manifest>

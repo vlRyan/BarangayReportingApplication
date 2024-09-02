@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportDetails"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mediaImageView"
+                style="@style/adapter_image"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reportDateTextView"
+                style="@style/adapter_date_black_italic_13sp"
+                android:text="Date" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginEnd="5dp"
+                    style="@style/adapter_date_black_italic_13sp"
+                    android:text="Reported by:" />
+
+                <TextView
+                    android:id="@+id/reporterTextView"
+                    style="@style/adapter_date_black_italic_13sp"
+                    android:text="Reporter" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/reportTitleTextView"
+                style="@style/text_primary_regular_18sp"
+                android:text="Title"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/reportDescriptionTextView"
+                style="@style/text_black_light_16sp"
+                android:text="Description"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/Stv"
+                    style="@style/text_black_light_16sp"
+                    android:text="Status:"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="5dp"/>
+
+                <TextView
+                    android:id="@+id/statusTextView"
+                    style="@style/text_black_light_16sp"
+                    android:fontFamily="@font/poppins_italic"
+                    android:text="Status"
+                    android:layout_toRightOf="@+id/Stv" />
+
+                <TextView
+                    android:id="@+id/acceptButton"
+                    style="@style/adapter_edit_primary_italic_14sp"
+                    android:textSize="16sp"
+                    android:text="Accept"
+                    android:layout_toLeftOf="@+id/rejectButton"
+                    android:layout_marginEnd="20dp"/>
+
+                <TextView
+                    android:id="@+id/rejectButton"
+                    style="@style/adapter_delete_reject_italic_14sp"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/reject" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

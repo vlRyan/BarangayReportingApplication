@@ -1,0 +1,254 @@
+<resources>
+    <string name="google_map_api_key">_____USE-OWN-API_____</string>
+    <string name="app_name">ICom.Con</string>
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+    <string name="month_day_year">Month Day, Year</string>
+    <string name="appointments">Appointments</string>
+    <string name="_0_20">0</string>
+    <string name="_4_00_pm">4:00 PM</string>
+    <string name="_3_00_pm">3:00 PM</string>
+    <string name="_2_00_pm">2:00 PM</string>
+    <string name="_1_00_pm">1:00 PM</string>
+    <string name="_11_00_am">11:00 AM</string>
+    <string name="_10_00_am">10:00 AM</string>
+    <string name="_9_00_am">9:00 AM</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="input_response">Input Response</string>
+    <string name="send_response">Send Response</string>
+    <string name="reason_of_rejection">Reason of Rejection</string>
+    <string name="today_s_appointments">Today\'s Appointments</string>
+    <string name="barangay_officials">Barangay Officials</string>
+    <string name="punong_barangay">Punong Barangay</string>
+    <string name="arthur_diplat_carlos">Arthur Diplat Carlos</string>
+    <string name="sangguniang_barangay_members">Sangguniang Barangay Members</string>
+    <string name="sk_chairperson">SK Chairperson</string>
+    <string name="sk_kagawad">SK kagawad</string>
+    <string name="what">What:</string>
+    <string name="what_">What</string>
+    <string name="where_">Where</string>
+    <string name="where">Where:</string>
+    <string name="date">Date:</string>
+    <string name="when">When</string>
+    <string name="when_">When:</string>
+    <string name="time">Time:</string>
+    <string name="time_">Time</string>
+    <string name="update">Update</string>
+    <string name="food_and_beverages">Food and Beverages</string>
+    <string name="create_report">Create Report</string>
+    <string name="post">Post</string>
+    <string name="menu">Menu</string>
+    <string name="shop_description">Shop Description</string>
+    <string name="location">Location</string>
+    <string name="name_of_shop">Name of Shop</string>
+    <string name="store_and_grocery">Store and Grocery</string>
+    <string name="message_us">Message Us</string>
+    <string name="compose_message">Compose Message</string>
+    <string name="report_title">report_title</string>
+    <string name="report_description">report_description</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="date_">Date</string>
+    <string name="useremail">useremail</string>
+    <string name="reported_by">Reported By:</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="information">Information</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="purok_number">Purok Number</string>
+    <string name="appointment_purpose">Appointment Purpose</string>
+    <string name="other_purpose">Other Purpose</string>
+    <string name="preffered_time_and_date">Preffered Time and Date</string>
+    <string name="preferred_date">Preferred Date</string>
+    <string name="preffered_time">Preffered Time</string>
+    <string name="submit">Submit</string>
+    <string name="my_appointments">My Appointments</string>
+    <string name="services">Services</string>
+    <string name="phone_number">Phone Number (E.g. 09123456789)</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="submit_report">Submit Report</string>
+    <string name="topic">Topic</string>
+    <string name="upload_media">Upload Media</string>
+    <string name="submit_anonymously">Submit Anonymously</string>
+    <string name="slash">/</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="welcome_to_icom_con">Welcome to ICom.Con</string>
+    <string name="about_barangay">About Barangay</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="local_shops_and_services">Local Shops and Services</string>
+    <string name="announcements">Announcements</string>
+    <string name="barangay">Barangay</string>
+    <string name="officials">Officials</string>
+    <string name="contacts">Contacts</string>
+    <string name="barangay_information">Barangay Information</string>
+    <string name="recent_reports">Recent Reports</string>
+    <string name="purpose">Purpose</string>
+    <string name="shop_name">Shop Name:</string>
+    <string name="shop_description_">SHOP DESCRIPTION:</string>
+    <string name="shop_location">Location:</string>
+    <string name="read_more">Read More</string>
+    <string name="inquiries">Inquiries</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="my_reports">My Reports</string>
+    <string name="username">Username</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="phone">Phone</string>
+    <string name="announcement">Announcement</string>
+    <string name="login">Login</string>
+    <string name="icom_con">ICom.Con</string>
+    <string name="signup">Sign Up</string>
+    <string name="create_announcement">Create Announcement</string>
+    <string name="un_approved_reports">Un-Approved Reports</string>
+    <string name="new_reports">New Reports</string>
+    <string name="messages">Messages</string>
+    <string-array name="months">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="Day">
+        <item>Day</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="time">
+        <item>Time</item>
+        <item>9:00 AM</item>
+        <item>10:00 AM</item>
+        <item>11:00 AM</item>
+        <item>1:00 PM</item>
+        <item>2:00 PM</item>
+        <item>3:00 PM</item>
+        <item>4:00 PM</item>
+    </string-array>
+    <string-array name="purpose">
+        <item>Barangay Clearance</item>
+        <item>Cedula</item>
+        <item>Proof of Residency</item>
+        <item>Certification of Indigency</item>
+        <item>Certification of Good Moral</item>
+        <item>Other Purpose</item>
+    </string-array>
+    <string-array name="typeOfReport">
+        <item>Problem Type</item>
+        <item>Sanitation Problem</item>
+        <item>Infrastructure Problem</item>
+        <item>Land Problem</item>
+        <item>Peace and Order</item>
+    </string-array>
+    <string-array name="Puroks">
+        <item>Purok 1</item>
+        <item>Purok 2</item>
+        <item>Purok 3</item>
+        <item>Purok 4</item>
+        <item>Purok 5</item>
+        <item>Purok 6</item>
+        <item>Purok 7</item>
+        <item>Purok 8</item>
+        <item>Purok 9</item>
+        <item>Purok 10</item>
+        <item>Purok 11</item>
+        <item>Purok 12</item>
+        <item>Purok 13</item>
+        <item>Purok 14</item>
+        <item>Purok 15</item>
+        <item>Purok 16</item>
+        <item>Purok 17</item>
+        <item>Purok 18</item>
+        <item>Purok 19</item>
+        <item>Purok 20</item>
+        <item>Purok 21</item>
+        <item>Purok 22</item>
+        <item>Purok 23</item>
+        <item>Purok 24</item>
+        <item>Purok 25</item>
+        <item>Purok 26</item>
+        <item>Purok 27</item>
+        <item>Purok 28</item>
+        <item>Purok 29</item>
+        <item>Purok 30</item>
+        <item>Purok 31</item>
+        <item>Purok 32</item>
+    </string-array>
+    <string-array name="typeOfProduct">
+        <item>Type of Business</item>
+        <item>Food and Beverages</item>
+        <item>Service Provider</item>
+        <item>Sari-Sari Store</item>
+        <item>Grocery/Mini-Grocery</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="term">Welcome to Irisan Community Connect or ICOM.CON. These Terms and Conditions govern your use of the App. By accessing or using the App, you agree to be bound by these Terms and Conditions.</string>
+    <string name="term1">By accessing or using the App, you agree to comply with these Terms and Conditions. If you do not agree with any part of these Terms and Conditions, you must not use the App.</string>
+    <string name="term2">The App provides features including but not limited to:
+        \n\n&#8226; Online reporting of incidents, issues, or concerns within the barangay.
+        \n\n&#8226; Reservation services for barangay facilities or services.
+        \n\n&#8226; A community calendar to view upcoming events and activities.
+        \n\n&#8226; Messaging functionality for inquiries and communication with barangay officials.</string>
+    <string name="term3">When using the App, you agree to:
+        \n\n&#8226; Provide accurate and complete information.
+        \n\n&#8226; Respect the rights and privacy of other users.
+        \n\n&#8226; Refrain from engaging in any unlawful, harmful, or abusive behavior.
+        \n\n&#8226; Use the App only for lawful purposes and in compliance with all applicable laws and regulations.</string>
+    <string name="term4">Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and disclose your personal information.</string>
+    <string name="term5">All content and materials provided through the App, including but not limited to text, graphics, logos, images, and software, are the property of ICOM.CON or its licensors and are protected by copyright and other intellectual property laws.</string>
+    <string name="term6">To the fullest extent permitted by law, ICOM.CON shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the App.</string>
+    <string name="term7">ICOM.CON reserves the right to modify or update these Terms and Conditions at any time without prior notice. Your continued use of the App after any changes constitutes acceptance of the modified Terms and Conditions.</string>
+    <string name="term8">These Terms and Conditions shall be governed by and construed in accordance with the laws of the Philippines, without regard to its conflict of law principles.</string>
+    <string name="term9">If you have any questions or concerns about these Terms and Conditions, please contact us.
+        \n\nBy using the App, you acknowledge that you have read, understood, and agreed to these Terms and Conditions. If you do not agree with any part of these Terms and Conditions, you must discontinue use of the App immediately.
+        \n\nLast updated: February 11, 2024</string>
+    <string name="upload_proof_image">Upload Purok Leader Endorsement(Image)</string>
+</resources>

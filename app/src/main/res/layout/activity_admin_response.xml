@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adminResponse"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/response"
+        style="@style/text_primary_regular_18sp"
+        android:layout_marginTop="150dp"
+        android:text="@string/reason_of_rejection"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/barangayResponseEditText"
+        style="@style/text_input_box"
+        android:lines="8"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/submitResponseButton"
+        style="@style/primary_button"
+        android:text="@string/send_response"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

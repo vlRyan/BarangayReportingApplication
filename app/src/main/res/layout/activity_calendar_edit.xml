@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".calendarEdit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_primary"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:layout_margin="10dp"
+                    android:text="Title"/>
+
+                <EditText
+                    android:id="@+id/eventTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top|start"
+                    android:hint="Input text..."
+                    android:maxLines="5"
+                    android:padding="10dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/border_primary">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:text="Description"
+                    android:textColor="@color/primary" />
+
+                <EditText
+                    android:id="@+id/eventDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:maxLines="5"
+                    android:padding="10dp"
+                    android:hint="Input text..."
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/black"
+                    android:gravity="top|start"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_primary"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:layout_margin="10dp"
+                    android:text="Location" />
+
+                <EditText
+                    android:id="@+id/eventLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top|start"
+                    android:hint="Input text..."
+                    android:maxLines="5"
+                    android:padding="10dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_primary"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Upload image" />
+
+                <LinearLayout
+                    android:id="@+id/uploadMediaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/uploadMediaImage"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/image_icon"
+                        app:tint="@color/primary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_primary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/selected"
+                    style="@style/text_primary_regular_16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Date" />
+
+                <Button
+                    android:id="@+id/datePicker"
+                    style="@style/primary_button"
+                    android:layout_margin="10dp"
+                    android:text="Pick Date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_primary"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_primary_regular_16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Time" />
+
+                <TimePicker
+                    android:id="@+id/time_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add"
+                style="@style/primary_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Update" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

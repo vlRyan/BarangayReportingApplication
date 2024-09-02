@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/mediaImageView"
+            style="@style/adapter_image" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                style="@style/adapter_date_black_italic_13sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_alignParentEnd="true"
+                style="@style/adapter_date_black_italic_13sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/adapter_title_primary_light_18sp"
+            android:text="About"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                style="@style/text_black_light_16sp"
+                android:text="Location:" />
+
+            <TextView
+                android:id="@+id/where_"
+                style="@style/text_black_light_16sp"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/editButton"
+            android:layout_gravity="end"
+            style="@style/adapter_edit_primary_italic_14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/reportContainer"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/readMoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/mediaImageView"
+            style="@style/adapter_image" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            style="@style/adapter_date_black_italic_13sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/adapter_title_primary_light_18sp" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            style="@style/adapter_description_black_light_15sp" />
+
+        <TextView
+            style="@style/adapter_read_more_primary_italic_13sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

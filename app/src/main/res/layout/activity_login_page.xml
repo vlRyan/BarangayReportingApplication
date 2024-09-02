@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="40dp">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"/>
+
+
+        <TextView
+            android:id="@+id/Town"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/icom_con"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/primary"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="Login to your Account"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/Username"
+            style="@style/text_input_box"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="14dp"
+            android:drawableStart="@drawable/email_icon"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_primary" />
+
+        <EditText
+            android:id="@+id/Password"
+            style="@style/text_input_box"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/border_primary"
+            android:drawableStart="@drawable/password_icon"
+            android:drawablePadding="14dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/LoginBtn"
+            style="@style/primary_button"
+            android:background="@drawable/button_primary"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Sign In" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/primary" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/primary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_italic"
+            android:text="@string/signup"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/primary" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

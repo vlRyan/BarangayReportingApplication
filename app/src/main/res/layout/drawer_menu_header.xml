@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile_icon"
+        app:civ_border_color="@color/white"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/white"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameDisplay"
+        android:paddingTop="8dp"
+        android:textSize="18sp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/primary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/gmailDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_italic"
+        android:textColor="@color/primary"
+        android:textAlignment="center"
+        android:text="Gmail"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
